@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Alert</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .lock-icon {
+            font-size: 80px;
+            color: #ff4444;
+            margin-bottom: 30px;
+            text-shadow: 0 0 20px rgba(255, 68, 68, 0.5);
+        }
+
+        .main-title {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #ff4444;
+            text-shadow: 0 0 10px rgba(255, 68, 68, 0.3);
+        }
+
+        .sub-title {
+            font-size: 1.2em;
+            color: #cccccc;
+            opacity: 0.9;
+            letter-spacing: 1px;
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lock-icon pulse">🔒</div>
+        <h1 class="main-title">Unauthorized Access</h1>
+        <p class="sub-title">ByteXAuth Security Test</p>
+    </div>
+</body>
+</html>
